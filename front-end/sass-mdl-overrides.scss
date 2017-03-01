@@ -1,0 +1,20 @@
+// Some colors. Note that MDL uses strings for colors instead of HEX
+$my-color-01-rgb: '123 123 123';
+$my-color-02-rgb: '213 213 213';
+
+// I find it best to define my colour palette first then set some variables to use for the overrides
+// This makes it easier to change colour schemes with minimal effort
+$my-primary: $my-color-01-rgb !default;
+$my-accent: $my-color-02-rgb !default;
+
+// MDL can be customised by overriding variable. See this file for variable names
+// ./../../node_modules/material-design-lite/src/_variable.scss'
+// https://github.com/google/material-design-lite/wiki/Customizing-Colors
+$color-primary: $my-primary !default;
+// $color-primary-dark: '<RGB>' !default;
+$color-accent: $my-accent !default;
+// $color-primary-contrast: '<RGB>' !default;
+// $color-accent-contrast: '<RGB>' !default;
+
+// Helper constant which can be used for additional calculations to ensure proper ratios
+$metric__interval-px: 8px;

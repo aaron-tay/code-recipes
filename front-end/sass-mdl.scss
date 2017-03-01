@@ -1,0 +1,9 @@
+@import './sass-mdl-overrides.scss';
+
+// Install 'material-design-lite' via npm
+// The exact path to the file might need to be changed depending on where node_modules is located
+$NODE_MODULE_PATH: './../../node_modules';
+
+// Need to set the image path so internally required assets load properly
+$image_path: $NODE_MODULE_PATH+'/material-design-lite/dist/images' !default;
+@import $NODE_MODULE_PATH+'/material-design-lite/src/material-design-lite';
